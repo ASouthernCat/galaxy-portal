@@ -19,7 +19,7 @@ function createPotal(that) {
     scene = that.scene
     console.log("创建传送隧道")
 
-    const texture = new THREE.TextureLoader().load("src/assets/images/galaxy3.jpg")
+    const texture = new THREE.TextureLoader().load(new URL("@/assets/images/galaxy3.jpg",import.meta.url))
 
     splineGeometry = new THREE.BufferGeometry()
 
